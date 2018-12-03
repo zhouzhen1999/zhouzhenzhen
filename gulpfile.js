@@ -35,3 +35,13 @@ gulp.task('webserver', function() {
             }
         }));
 });
+
+
+//压缩css
+gulp.task('minifyCss', () => {
+    return gulp.src('./src/css/*.css')
+        .pipe(css())
+        .pipe(gulp.dest('dist/css'));
+});
+
+//压缩js
