@@ -4,6 +4,8 @@ let path = require("path");
 let url = require("url");
 let fs = require("fs");
 let server = require("gulp-webserver");
+let css = require("gulp-clean-css");
+let uglify = require("gulp-uglify");
 
 gulp.task('sass', function() {
     return gulp.src('./src/scss/*.scss')
